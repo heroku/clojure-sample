@@ -5,7 +5,7 @@
 (defroutes handler
   (GET "/" []
        {:headers {"Content-type" "text/plain; charset=UTF-8"}
-        :body "Hello world!"}))
+        :body "Hello world!\nVisit 'Getting Started with Clojure on Heroku' at the Heroku Dev Center to learn more: https://devcenter.heroku.com/articles/clojure  "}))
 
 (defn -main []
   (jetty/run-jetty handler
